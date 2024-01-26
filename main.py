@@ -17,6 +17,8 @@ def main():
             print(f'Отсортированный список: {nums}')
     elif user_change == "2":
         pass
+    elif user_change == "3":
+        pass
     elif user_change == "9":
         exit(0)
     else:

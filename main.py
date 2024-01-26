@@ -6,7 +6,15 @@ def main():
                         '   [6] \n   [7] \n   '
                         '[8] \n   [9] Выход\n   >>> ')
     if user_change == "1":
-        merge_sort(input('\n[+] Введите список: '))
+        x = input('\n[+] Введите список: ')
+        nums = [int(i) for i in x.split(',')]
+        if len(nums) <= 1:
+            print(Fore.RED + '[-]список дожен состоять из более чем одного элемента!!!')
+            # main()
+            # return
+        else:
+            merge_sort(nums)
+            print(f'Отсортированный список: {nums}')
     elif user_change == "2":
         pass
     elif user_change == "9":

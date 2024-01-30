@@ -7,7 +7,7 @@ def main():
                         '[8] \n   [9] Выход\n   >>> ')
     if user_change == "1":
         x = input('\n[+] Введите список: ')
-        nums = [int(i) for i in x.split(',')]
+        nums = [i for i in x.split(',')]
         if len(nums) <= 1:
             print(Fore.RED + '[-]список дожен состоять из более чем одного элемента!!!')
             # main()
